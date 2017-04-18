@@ -11,17 +11,28 @@
   <!-- Load local lib and tests. -->
   <script src="../src/jquery.newsfader.js"></script>
   <script src="newsfader_test.js"></script>
+   <link rel="stylesheet" href="../css/style.css" media="screen">
   <!-- Removing access to jQuery and $. But it'll still be available as _$, if
        you REALLY want to mess around with jQuery in the console. REMEMBER WE
        ARE TESTING A PLUGIN HERE, THIS HELPS ENSURE BEST PRACTICES. REALLY. -->
   <script>window._$ = jQuery.noConflict(true);</script>
+
 </head>
 <body>
   <div id="qunit"></div>
-  <div id="qunit-fixture">
-    <span>lame test markup</span>
-    <span>normal test markup</span>
-    <span>awesome test markup</span>
+  <div id="qunit-fixture" class="newsticker js-newsticker">
+    <ul class="js-frame">
+        <li class="js-item">Google shares top $1,000 after strong earnings.</li>
+        <li class="js-item">Sleep 'cleans' the brain of toxins.</li>
+        <li class="js-item">Amaze project aims to take 3D printing 'into metal age'.</li>
+    </ul>
   </div>
+  <div class="newsticker js-newsticker">
+    <ul class="js-frame">
+        <li class="js-item">Google shares top $1,000 after strong earnings.</li>
+        <li class="js-item">Sleep 'cleans' the brain of toxins.</li>
+        <li class="js-item">Amaze project aims to take 3D printing 'into metal age'.</li>
+    </ul>
+</div>
 </body>
 </html>

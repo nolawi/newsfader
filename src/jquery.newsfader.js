@@ -9,7 +9,7 @@
 
 
 (function($) {
-  $.fn.dropdown = function(opts) {
+  $.fn.newsfader = function(opts) {
     // default configuration
     var config = $.extend({}, { 
             fadeInTime: 800,

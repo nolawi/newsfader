@@ -18,6 +18,7 @@
         }, opts);
     // main function
     function init(obj) {
+        console.log ('newsfader');
             var dNewsticker = obj;
             var dFrame = dNewsticker.find('.js-frame');
             var dItem = dFrame.find('.js-item');

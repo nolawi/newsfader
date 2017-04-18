@@ -62,7 +62,5 @@
     return this;
   };
   // start
-  $(function() {
-    $('.js-newsticker').dropdown();
-  });
+  
 })(jQuery);

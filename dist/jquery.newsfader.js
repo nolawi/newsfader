@@ -1,13 +1,6 @@
-/*
- * newsfader
- * https://github.com/nolawi/newsfader
- *
- * Copyright (c) 2017 Nolawi Petros
- * Licensed under the MIT license.
- */
-
-
-
+/*! News Fader - v0.1.2 - 2017-04-19
+* https://github.com/nolawi/newsfader
+* Copyright (c) 2017 Nolawi Petros; Licensed MIT */
 (function($) {
   $.fn.newsfader = function(opts) {
     // default configuration

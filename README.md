@@ -8,23 +8,36 @@ Download the [production version][min] or the [development version][max].
 [min]: https://raw.github.com/nolawi/newsfader/master/dist/newsfader.min.js
 [max]: https://raw.github.com/nolawi/newsfader/master/dist/newsfader.js
 
-In your web page:
+Add the `newsfader.min.js` to your html
+
+To intiate plugin 
 
 ```html
+
 <script src="jquery.js"></script>
 <script src="dist/newsfader.min.js"></script>
 <script>
-jQuery(function($) {
-  $.awesome(); // "awesome"
-});
+  // default options are 
+  $(".js-newsticker").newsfader();
+
 </script>
+
 ```
 
 ## Documentation
-_(Coming soon)_
+_If you need to change the default options_ 
+
+which are   `fadeInTime: 800,`
+            `fadeOutTime: 800,`
+            `interval: 5600`
+
+```js
+$(".js-newsticker").newsfader({fadeInTime: 100, fadeOutTime:100});
+
+````
 
 ## Examples
-_(Coming soon)_
+`https://github.com/nolawi/newsfader/blob/master/test/newsfader.html`
 
 ## Release History
-_(Nothing yet)_
+`https://github.com/nolawi/newsfader/releases`

@@ -20,8 +20,8 @@
     function init(obj) {
         
             var dNewsticker = obj;
-            var dFrame = dNewsticker.find('ul');
-            var dItem = dFrame.find('l1');
+            var dFrame = dNewsticker.find('.js-newsticker ul');
+            var dItem = dFrame.find('.js-newsticker ul li');
             var dCurrent;
             var stop = false;
 
@@ -55,12 +55,18 @@
                 }
             });
         }
+ //condition to see if newsfader should fade
     // initialize every element
     this.each(function() {
       init($(this));
     });
+
     return this;
   };
+
   // start
+  $(function() {
+  $(".js-newsticker").newsfader({fadeInTime: 100, fadeOutTime:100});
+});
   
 })(jQuery);

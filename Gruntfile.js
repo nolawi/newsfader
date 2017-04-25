@@ -21,8 +21,8 @@ module.exports = function(grunt) {
         stripBanners: true
       },
       dist: {
-        src: ['src/jquery.<%= pkg.name %>.js'],
-        dest: 'dist/jquery.<%= pkg.name %>.js'
+        src: ['ngkit/src/ngkit.<%= pkg.name %>.js'],
+        dest: 'dist/src/.<%= pkg.name %>.js'
       },
     },
     uglify: {

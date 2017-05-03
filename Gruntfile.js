@@ -1,4 +1,4 @@
-'use strict';
+
 
 module.exports = function(grunt) {
 
@@ -40,13 +40,15 @@ module.exports = function(grunt) {
     jshint: {
       options: {
         jshintrc: true,
+          unused: false,
         reporterOutput: "",
+
       },
       gruntfile: {
         src: 'Gruntfile.js'
       },
       src: {
-        src: ['src/**/*.js']
+        src: ['src/jquery.newsfader.js']
       },
       test: {
         src: ['test/**/*.js']
@@ -67,7 +69,7 @@ module.exports = function(grunt) {
       },
     },
   });
-
+  grunt.loadTasks('tasks');
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');

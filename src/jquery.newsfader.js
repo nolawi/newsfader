@@ -7,7 +7,6 @@
  */
 
 
-
 (function($) {
   $.fn.newsfader = function(opts) {
     // default configuration
@@ -28,7 +27,7 @@
             dItem.eq(0).addClass('current');
             dItem.eq(0).show();
             
-            var move = setInterval(function(){
+            var move = setInterval(function(){  // jshint ignore:line
                 if(!stop){
                     dCurrent = dFrame.find('.current');
                     dCurrent.fadeOut(config.fadeOutTime, function(){
@@ -45,7 +44,7 @@
                     });
                 }
             }, config.interval);
-            
+
             dNewsticker.on('mouseover mouseout', function(e){
                 if(e.type === 'mouseover'){
                     stop = true;

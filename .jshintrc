@@ -1,3 +1,4 @@
+
 {
   "curly": true,
   "eqeqeq": true,
@@ -10,5 +11,7 @@
   "unused": true,
   "boss": true,
   "eqnull": true,
+  "jquery": false,
+
   "node": true
 }
